@@ -1,6 +1,6 @@
 {
   "name": "json-format-safely",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "json format safely",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,8 @@
   "repository": "https://github.com/YanagiEiichi/json-format-safely.git",
   "license": "MIT",
   "dependencies": {
-    "amd2umd": "0.0.5"
+    "amd2umd": "0.0.5",
+    "capacitance": "^1.0.0"
   },
   "devDependencies": {
     "ava": "^0.19.0"
