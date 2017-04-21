@@ -71,6 +71,16 @@ test('keep unicode', t => {
   t.is(lines[3], void 0);
 });
 
+test('keep encoded unicode', t => {
+  let json = '["\\\\u1234\\\\u5678\\\\u90ab\\\\ucdef"]';
+  let result = jsonFormatSafely(json);
+  let lines = result.split('\n');
+  t.is(lines[0], '[');
+  t.is(lines[1], '  "\\\\u1234\\\\u5678\\\\u90ab\\\\ucdef"');
+  t.is(lines[2], ']');
+  t.is(lines[3], void 0);
+});
+
 test('keep number and unicode', t => {
   let json = '["1234\\u567890"]';
   let result = jsonFormatSafely(json);
