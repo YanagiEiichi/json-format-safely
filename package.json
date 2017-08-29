@@ -1,6 +1,6 @@
 {
   "name": "json-format-safely",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "json format safely",
   "main": "index.js",
   "scripts": {

@@ -92,7 +92,7 @@ test('keep number and unicode', t => {
 });
 
 test('keep struct', t => {
-  let source = { a: 1, b: 2, c: [ 1, 2, 3 ] };
+  let source = { a: -1, b: 2, c: [ 1, 2, 3 ] };
   let json = JSON.stringify(source);
   let result = jsonFormatSafely(json);
   t.is(JSON.stringify(source, null, 2), result);
