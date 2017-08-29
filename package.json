@@ -1,10 +1,10 @@
 {
   "name": "json-format-safely",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "json format safely",
   "main": "index.js",
   "scripts": {
-    "install": "amd2umd amd.js > index.js",
+    "prepublish": "amd2umd amd.js > index.js",
     "test": "ava"
   },
   "bin": {
